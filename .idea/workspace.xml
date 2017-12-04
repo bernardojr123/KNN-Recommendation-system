@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e942165b-ea54-4a59-84aa-cf9a72d0fef4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/knn.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/naive_voice.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/naivebayes_iris.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/voice.csv" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/BX-Book-Ratings.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/BX-Books.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/BX-Users.csv" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/separador.py" afterPath="$PROJECT_DIR$/separador.py" />
-    </list>
+    <list default="true" id="e942165b-ea54-4a59-84aa-cf9a72d0fef4" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
