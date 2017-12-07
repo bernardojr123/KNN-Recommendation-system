@@ -10,7 +10,7 @@ book_dict = {}
 
 
 header = ['user_id', 'isbn', 'rating']
-df = pd.read_csv('novo.csv', names=header,delimiter=';')
+df = pd.read_csv('booksrating.csv', names=header,delimiter=';',nrows=15000)
 contador_user = 0
 contador_book = 0
 for line in df.itertuples():
@@ -72,13 +72,6 @@ def predict_topk(ratings, similarity, kind='user', k=40):
     return pred
 
 user_prediction = predict(train_data_matrix, user_similarity, type='user')
-
-
-def rmse(prediction, ground_truth):
-    prediction = prediction[ground_truth.nonzero()].flatten()
-    ground_truth = ground_truth[ground_truth.nonzero()].flatten()
-    return sqrt(mean_squared_error(prediction, ground_truth))
-
-print ('User-based CF RMSE: ' + str(rmse(user_prediction, test_data_matrix)))
-#pred = predict_topk(train_data_matrix, user_similarity, kind='user', k=40)
-#print ('User-based aaaaCF RMSE: ' + str(rmse(pred, test_data_matrix)))
+print(user_prediction)
+pred = predict_topk(train_data_matrix, user_similarity, kind='user', k=40)
+print(pred)

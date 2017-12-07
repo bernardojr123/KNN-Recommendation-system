@@ -18,10 +18,8 @@ matriz_y = []
 
 for line in train_data.itertuples():
     linha = []
-    linha.append(float(line[2]))
-    linha.append(float(line[3]))
-    linha.append(float(line[4]))
-    linha.append(float(line[5]))
+    for i in range(2,6):
+        linha.append(float(line[i]))
     matriz_x.append(linha)
     matriz_y.append(dici[line[6]])
 
@@ -34,10 +32,8 @@ erros = 0
 
 for line in test_data.itertuples():
     linha = []
-    linha.append(float(line[2]))
-    linha.append(float(line[3]))
-    linha.append(float(line[4]))
-    linha.append(float(line[5]))
+    for i in range(2,6):
+        linha.append(float(line[i]))
     correto = line[6]
     resposta = algo.predict_proba(np.array([linha]))
     predict_int = np.array(resposta, dtype=np.int)
